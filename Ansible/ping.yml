@@ -1,0 +1,4 @@
+- name: Test Connection to each CM4 device
+  hosts: all
+  tasks:
+   - action: ping
