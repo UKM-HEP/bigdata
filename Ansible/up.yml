@@ -1,10 +1,11 @@
 ---
-- name: Running the essential plays
+- name: Install rpi and node exporter
   hosts: all
   roles:
     - rpi_exporter
     - node_exporter
-
-- hosts: snode0
+    
+- name: Install monitoring server
+  hosts: snode0
   roles:
     - monitoring_server 
