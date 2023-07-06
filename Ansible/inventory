@@ -2,8 +2,4 @@
 snode[1:5]
 
 [webservers]
-snode1
-snode2
-snode3
-snode4
-snode5
+snode[1:5]

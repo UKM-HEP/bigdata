@@ -1,0 +1,10 @@
+---
+- name: Running the essential plays
+  hosts: all
+  roles:
+    - rpi_exporter
+    - node_exporter
+
+- hosts: snode0
+  roles:
+    - monitoring_server 
