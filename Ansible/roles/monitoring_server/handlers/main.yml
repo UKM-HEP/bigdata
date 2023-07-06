@@ -5,5 +5,7 @@
   listen: event_restart_prometheus
 
 - name: Reload systemd
-  command: systemctl daemon-reload
+  command: |
+        systemctl daemon-reload
+        systemctl restart prometheus.service
   listen: systemd_reload

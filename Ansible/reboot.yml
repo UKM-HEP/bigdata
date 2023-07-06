@@ -1,0 +1,8 @@
+---
+- name: Reboot all CM4 devices
+  hosts: all
+  tasks:
+    - name: Do it now
+      become: yes
+      become_user: root
+      shell: "sleep 3 && reboot"

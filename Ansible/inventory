@@ -1,5 +1,5 @@
 [all]
-snode[1:5]
+snode[0:5]
 
 [webservers]
-snode[1:5]
+snode[0:5]

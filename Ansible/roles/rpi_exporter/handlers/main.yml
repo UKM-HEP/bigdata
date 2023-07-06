@@ -1,4 +1,6 @@
 ---
 - name: Reload systemd
-  command: systemctl daemon-reload
+  command: |
+        systemctl daemon-reload
+        systemctl restart rpi_exporter.service
   listen: systemd_reload

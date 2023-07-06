@@ -1,4 +1,0 @@
-- name: Shutdown all CM4 devices
-  hosts: all
-  tasks:
-   - action: shutdown
