@@ -14,6 +14,10 @@
       register: reboot_required_file
       stat: path=/var/run/reboot-required get_md5=no
 
+    - name: Install desired pacakges
+      shell: |
+        apt install -y emacs htop
+
     - name: Reboot if kernel updated
       reboot:
         msg: "Reboot initiated by Ansible for kernel updates"
